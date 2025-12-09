@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011-2022 Samuel Audet
+ * Copyright (C) 2011-2025 Samuel Audet
  *
  * Licensed either under the Apache License, Version 2.0, or (at your option)
  * under the terms of the GNU General Public License as published by
@@ -1312,7 +1312,7 @@ public class Builder {
         }
         System.out.println(
             "JavaCPP version " + version + "\n" +
-            "Copyright (C) 2011-2022 Samuel Audet <samuel.audet@gmail.com>\n" +
+            "Copyright (C) 2011-2025 Samuel Audet <samuel.audet@gmail.com>\n" +
             "Project site: https://github.com/bytedeco/javacpp");
         System.out.println();
         System.out.println("Usage: java -jar javacpp.jar [options] [class or package (suffixed with .* or .**)] [commands]");
