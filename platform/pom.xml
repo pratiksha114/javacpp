@@ -248,7 +248,7 @@
             <configuration>
               <archive>
                 <manifestEntries>
-                  <Class-Path>javacpp.jar javacpp-linux-armhf.jar javacpp-linux-arm64.jar javacpp-linux-ppc64le.jar javacpp-linux-riscv64.jar javacpp-linux-x86.jar javacpp-linux-x86_64.jar javacpp-macosx-arm64.jar javacpp-macosx-x86_64.jar javacpp-windows-arm64.jar javacpp-windows-x86.jar javacpp-windows-x86_64.jar</Class-Path>
+                  <Class-Path>javacpp.jar javacpp-linux-armhf.jar javacpp-linux-arm64.jar javacpp-linux-ppc64le.jar javacpp-linux-riscv64.jar javacpp-linux-s390x.jar javacpp-linux-x86.jar javacpp-linux-x86_64.jar javacpp-macosx-arm64.jar javacpp-macosx-x86_64.jar javacpp-windows-arm64.jar javacpp-windows-x86.jar javacpp-windows-x86_64.jar</Class-Path>
                 </manifestEntries>
               </archive>
             </configuration>
@@ -1530,6 +1530,19 @@
         <javacpp.platform.linux-riscv64>linux-riscv64${javacpp.platform.extension}</javacpp.platform.linux-riscv64>
       </properties>
     </profile>
+
+    <profile>
+      <id>javacpp.platform.custom-linux-s390x</id>
+      <activation>
+        <property>
+          <name>javacpp.platform.host</name>
+        </property>
+        <os><name>linux</name><arch>s390x</arch></os>
+      </activation>
+      <properties>
+        <javacpp.platform.linux-s390x>linux-ppc64le${javacpp.platform.extension}</javacpp.platform.linux-s390x>
+      </properties>
+    </profile> 
 
     <profile>
       <id>javacpp.platform.custom-linux-amd64</id>
