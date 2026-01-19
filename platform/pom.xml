@@ -1540,7 +1540,7 @@
         <os><name>linux</name><arch>s390x</arch></os>
       </activation>
       <properties>
-        <javacpp.platform.linux-s390x>linux-ppc64le${javacpp.platform.extension}</javacpp.platform.linux-s390x>
+        <javacpp.platform.linux-s390x>linux-s390x${javacpp.platform.extension}</javacpp.platform.linux-s390x>
       </properties>
     </profile> 
 
